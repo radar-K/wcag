@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Uppgift 1 -->
+    <button id="popBtn" aria-expanded="false">Pop this button</button>
+    
+    <div id="accessibleModal" class="hidden" role="dialog" aria-labelledby="modalTitle">
+        <h2 id="modalTitle">Exempel på modalfönster</h2>
+        <p>Här är lite text i modalfönstret.</p>
+        <button id="closeModalBtn">Stäng</button>
+    </div>
+
+    <!-- Uppgift 2 -->
+    <button id="popBtn2" aria-expanded="false">Pop and Up</button>
+    <dialog id="accessibleDialog" aria-labelledby="dialogAria">
+        <h2 id="dialogAria">Exempel på tillgängligt modalfönster</h2>
+        <p>Här är innehållet i modalfönstret.</p>
+        <button id="closeDialogBtn">Stäng</button>
+    </dialog>
+
+    <!-- Uppgift 3 - Hamburgermeny -->
+    <button id="menuButton" aria-expanded="false">
+        <img class="menuIcon" src="menuBtn.png" alt="Meny bild" />
+    </button>
+    <nav id="menuContent" class="hidden" aria-labelledby="menuButton">
+        <ul>
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Om oss</a></li>
+            <li><a href="#">Tjänster</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+   <!---När en webbläsare ser en <dialog>-tagg, förstår den att detta är en 
+    interaktiv ruta som kräver användarens uppmärksamhet, vilket gör det
+    lättare för hjälpmedel som skärmläsare att förstå och förmedla informationen 
+    korrekt till användaren.--->

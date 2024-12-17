@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+#menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.menuIcon{
+  display: flex;
+  height: 14px;
+  width: 14px;
+}
